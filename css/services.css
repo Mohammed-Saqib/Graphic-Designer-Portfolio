@@ -60,7 +60,7 @@
     border-radius: 50%;
     background: var(--primaryColor);
 }
-.s-crd-title:hover .arrows{
+/* .s-crd-title:hover .arrows{
     border-left: 1rem solid var(--textColor);
     transform: rotate(90deg) translateX(.5rem);
     -webkit-transform: rotate(90deg) translateX(.5rem);
@@ -73,6 +73,23 @@
 }
 .s-crd-title:hover{
     background-color: var(--primaryColor);
+} */
+.s-crd-title.active .arrows{
+    border-left: 1rem solid var(--textColor);
+    transform: rotate(90deg) translateX(.5rem);
+    -webkit-transform: rotate(90deg) translateX(.5rem);
+    -moz-transform: rotate(90deg) translateX(.5rem);
+    -ms-transform: rotate(90deg) translateX(.5rem);
+    -o-transform: rotate(90deg) translateX(.5rem);
+}
+.s-crd-title.active .arrows::before{
+    background: var(--textColor);
+}
+.s-crd-title.active{
+    background-color: var(--primaryColor);
+}
+.s-crd-title.active ~ .s-crd-content{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 .s-crd-content{
     position: absolute;

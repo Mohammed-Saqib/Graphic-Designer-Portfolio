@@ -14,17 +14,13 @@ const menu = document.getElementById('menu');
 function handleToggle() {
     menu.classList.toggle('active');
 }
-
 // ====================== Services Section Card Coding ======================
-const sCardTitle =document.getElementById('s-card-title');
-const sCard = document.getElementById('s-card');
-sCardTitle.addEventListener('mouseenter', function() {
-    sCard.classList.add('active')
-});
-sCardTitle.addEventListener('mouseleave', function() {
-    sCard.classList.remove('active')
-});
-
+const crd= document.querySelectorAll('.s-crd-title');
+for (let i = 0; i < crd.length; i++) {
+    crd[i].addEventListener('click', function(e){
+        crd[i].classList.toggle('active');
+    });
+}
 // ====================== Portfolio Coding ======================
 var swiper = new Swiper(".yt-swapper", {
     slidesPerView: 1,
