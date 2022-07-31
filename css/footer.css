@@ -1,0 +1,99 @@
+.footer-section{
+    width: 100%;
+    padding: 3rem 1rem;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+}
+.footerIcon{
+    color: var(--resumeSubTitle);
+    width: 20px;
+}
+.footer-text{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--resumeSubTitle);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+/* ============ Go Up Coding ==================== */
+.go-up-container{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+    right: 1.5%;
+    bottom: 3%;
+    box-shadow: 0 0 10px var(--primaryColor);
+    -webkit-box-shadow: 0 0 10px var(--primaryColor);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 60;
+    transition: background-color .4s ease;
+    -webkit-transition: background-color .4s ease;
+    -moz-transition: background-color .4s ease;
+    -o-transition: background-color .4s ease;
+    -ms-transition: background-color .4s ease;
+    display: none;
+}
+.go-up-container.active{
+    display: grid;
+}
+.arrowUpIcon{
+    position: absolute;
+    width: 15px;
+    color: var(--BgColor);
+    transition: transform .3s ease;
+    -webkit-transition: transform .3s ease;
+    -moz-transition: transform .3s ease;
+    -o-transition: transform .3s ease;
+    -ms-transition: transform .3s ease;
+}
+.arrowUpIcon:nth-child(2){
+    transform: translateY(4rem);
+    -webkit-transform: translateY(4rem);
+    -moz-transform: translateY(4rem);
+    -o-transform: translateY(4rem);
+    -ms-transform: translateY(4rem);
+}
+.go-up-container:hover{
+    background-color: var(--primaryHover);
+}
+.go-up-container:hover .arrowUpIcon:nth-child(2){
+    transform: translateY(0rem);
+    -webkit-transform: translateY(0rem);
+    -moz-transform: translateY(0rem);
+    -o-transform: translateY(0rem);
+    -ms-transform: translateY(0rem);
+}
+.go-up-container:hover .arrowUpIcon:nth-child(1){
+    transform: translateY(-4rem) !important;
+    -webkit-transform: translateY(-4rem) !important;
+    -moz-transform: translateY(-4rem) !important;
+    -o-transform: translateY(-4rem) !important;
+    -ms-transform: translateY(-4rem) !important;
+}
+@media screen and (max-width:576px) {
+    .footerIcon{
+        width: 15px;
+    }
+    .footer-text{
+        font-size: 1.4rem;
+    }
+    /* ============ Go Up Coding ==================== */
+    .go-up-container{
+        width: 40px;
+        height: 40px;
+        right: 5%;
+        bottom: 3%;
+    }
+    .arrowUpIcon{
+        width: 12.5px;
+    }
+}

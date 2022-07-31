@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <!-- swiper Link CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/resume.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Freelance Motion | Graphics Designer</title>
+    <meta name="title" content="Freelance Motion | Graphics Designer">
+    <meta property="og:title" content="Freelance Motion | Graphics Designer">
+    <meta name="description" content="Freelance Motion And Graphics Designer Love To Play Cricket.">
+    <meta name="keywords" content="Graphics Designer, Freelance Motion, Freelance Graphics Designer, Graphics Designer In Bangalore, Graphics Designer In Odhisa">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chandra Pratap Samal Portfolio">
+    <meta name="author" content="Mohammed Saqib">
+</head>
+
+<body>
+    <!-- ========================== Navbar Section ======================== -->
+    <navbar class="header" id="header">
+        <div class="logo">Intelli<img src="./images/logo.png" alt="Logo" width="100px"></div>
+        <div class='menu' id='menu' onclick="handleToggle()">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="#resumeSection">Resume</a></li>
+                <li><a href="#servicesSection">Services</a></li>
+                <li><a href="#projectSection">Portfolio</a></li>
+                <li><a href="#contactSection">Contact</a></li>
+            </ul>
+            <div class="cancel-icon">
+                <i class="fa-regular fa-circle-xmark fa-3x"></i>
+            </div>
+        </div>
+        <div class="menu-icon" onclick="handleToggle()">
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </navbar>
+
+    <!-- ========================== Hero Section ======================== -->
+    <section class="hero-section">
+        <div class="h-left">
+            <div class="hero-float-left">Designer</div>
+            <p class="h-left-intro">Hello !</p>
+            <h2 class="h-left-name">I'm Chand</h2>
+            <h1 class="h-left-title">Freelance Motion And <wbr>Graphics Designer <wbr>Love to <wbr>play Cricket</h1>
+        </div>
+        <div class="h-right"> 
+            <div class="h-right-img">
+                    <img src="./images/hero-section.png" alt="Graphics Designer">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================== About Section ======================== -->
+    <section class="sections about-section" id="aboutSection">
+        <div class="section-title">
+            <h3>About Me</h3>
+            <p class="s-subtitle">I am a Creative Professional with 4+ Years of Experience</p>
+        </div>
+        <div class="about-sec-container">
+            <div class="a-left">
+                <div class="a-left-img">
+                    <img src="./images/profile.jpg" alt="Chandra Pratap Samal">
+                </div>
+            </div>
+            <div class="a-right">
+                <div class="a-right-crd">
+                    <div class="a-r-crd-field">
+                        <p class="a-crd-field-name">Name</p>
+                        <p class="a-crd-field-name-val"><span>:</span> Chandra Pratap <wbr>Samal</p>
+                    </div>
+                    <div class="a-r-crd-field">
+                        <p class="a-crd-field-name">Age</p>
+                        <p class="a-crd-field-name-val"><span>:</span> 26</p>
+                    </div>
+                    <div class="a-r-crd-field">
+                        <p class="a-crd-field-name">Website</p>
+                        <p class="a-crd-field-name-val"><span>:</span> www.<wbr>intellich.<wbr>com</p>
+                    </div>
+                    <div class="a-r-crd-field">
+                        <p class="a-crd-field-name">Degree</p>
+                        <p class="a-crd-field-name-val"><span>:</span> Master</p>
+                    </div>
+                    <div class="a-r-crd-field">
+                        <p class="a-crd-field-name">Phone</p>
+                        <p class="a-crd-field-name-val"><span>:</span> 8908655121 , <wbr>7008166708</p>
+                    </div>
+                    <div class="a-r-crd-field">
+                        <p class="a-crd-field-name">Gmail</p>
+                        <p class="a-crd-field-name-val"><span>:</span> C.<wbr>8908655121<wbr>@gmail.com</p>
+                    </div>
+                    <div class="a-r-crd-field">
+                        <p class="a-crd-field-name">City</p>
+                        <p class="a-crd-field-name-val"><span>:</span> Bangalore</p>
+                    </div>
+                    <div class="a-r-crd-field">
+                        <p class="a-crd-field-name">Freelance</p>
+                        <p class="a-crd-field-name-val"><span>:</span> Available</p>
+                    </div>
+                </div>
+                <div class="a-right-experience">
+                    <div class="a-right-exp-con">
+                        <div class="a-right-exp-val">4<span>+</span></div>
+                        <div class="a-right-exp-info">Year Of Experience</div>
+                    </div>
+                    <div class="a-right-exp-con" id="resumeSection">
+                        <div class="a-right-exp-val">100<span>+</span></div>
+                        <div class="a-right-exp-info">Projects Completed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================== Resume Section ======================== -->
+    <section class="sections resume-section">
+        <div class="section-title">
+            <h3>My Resume</h3>
+            <p class="s-subtitle">The simpler you say it, the more eloquent it is</p>
+        </div>
+        <div class="r-sec-container">
+            <div class="r-s-left">
+                <div class="r-s-row">
+                    <div class="r-s-title">
+                        <img src="./images/education.png" alt="Education">
+                        <p class="r-s-title-img-desc">Education</p>
+                    </div>
+                    <div class="r-s-info">
+                        <p class="r-s-info-title">School</p>
+                        <p class="r-s-info-val"><span>:</span> Harisamanta High School, <wbr>Jajpur<wbr>Board-H.S.E<wbr>Passed Out- 2012</p>
+                    </div>
+                    <div class="r-s-info">
+                        <p class="r-s-info-title">12th</p>
+                        <p class="r-s-info-val"><span>:</span> Chitalo JR Mohavidyalaya, Jajpur C.H.S.E Stream- Science Passed Out- 2014</p>
+                    </div>
+                    <div class="r-s-info">
+                        <p class="r-s-info-title">Graduation</p>
+                        <p class="r-s-info-val"><span>:</span> Debaray Samarsingh Utkal University Stream- Science(PCM) Passed Out- 2018</p>
+                    </div>
+                </div>
+                <div class="r-s-row">
+                    <div class="r-s-title">
+                        <img src="./images/p-qualification.png" alt="Professional Qualification">
+                        <p class="r-s-title-img-desc">Professional Qualification</p>
+                    </div>
+                    <div class="r-s-info">
+                        <p class="r-s-info-pointer"><span></span>AAIP Animation under Arena Multimedia, Sahid Nagar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="r-s-right">
+                <div class="r-s-row">
+                    <div class="r-s-title">
+                        <img src="./images/experience.png" alt="Experience">
+                        <p class="r-s-title-img-desc">Experience</p>
+                    </div>
+                    <div class="r-s-info">
+                        <p class="r-s-info-pointer"><span></span>Worked as Graphic Designer at MBC TV from 1st August 2018 to 31st January 2020.</p>
+                    </div>
+                    <div class="r-s-info">
+                        <p class="r-s-info-pointer"><span></span>Worked at Swapna Tv from 12th October 2020 to 31st August 2021.</p>
+                    </div>
+                    <div class="r-s-info">
+                        <p class="r-s-info-pointer"><span></span>Working at Odisha Bhaskar from 1st September 2021 to April 2022.</p>
+                    </div>
+                    <div class="r-s-info">
+                        <p class="r-s-info-pointer"><span></span>Working at Royalmac PVT.LTD ,Bangalore since 26th May 2022.</p>
+                    </div>
+                </div>
+                <div class="r-s-row">
+                    <div class="r-s-title">
+                        <img src="./images/extra-activity.png" alt="Extracurricular Activities">
+                        <p class="r-s-title-img-desc">Extracurricular Activities</p>
+                    </div>
+                    <div class="r-s-info">
+                        <p class="r-s-info-pointer"><span></span>Editing</p>
+                    </div>
+                    <div class="r-s-info">
+                        <p class="r-s-info-pointer"><span></span>Painting</p>
+                    </div>
+                    <div class="r-s-info">
+                        <p class="r-s-info-pointer"><span></span>Sporting</p>
+                    </div>
+                    <div class="r-s-info" id="servicesSection">
+                        <p class="r-s-info-pointer"><span></span>Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- ========================== Services Section ======================== -->
+     <section class="sections services-section">
+        <div class="section-title">
+            <h3>Services</h3>
+            <p class="s-subtitle">I Work With You, Not For You.</p>
+        </div>
+        <div class="services-container">
+            <div class="s-cards">
+                <div class="s-crd-title" id="s-card-title">
+                    <p class="s-crd-title-info">Software Skills</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content" id="s-card">
+                    <p class="s-crd-content-list">Adobe Photoshop</p>
+                    <p class="s-crd-content-list">Adobe Illustrator</p>
+                    <p class="s-crd-content-list">Adobe After Effects</p>
+                    <p class="s-crd-content-list">Adobe Premier Pro</p>
+                    <p class="s-crd-content-list">Adobe Animate</p>
+                    <p class="s-crd-content-list">Figma</p>
+                </div>
+            </div>
+            <div class="s-cards">
+                <div class="s-crd-title">
+                    <p class="s-crd-title-info">UI Design</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content">
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                </div>
+            </div>
+            <div class="s-cards">
+                <div class="s-crd-title">
+                    <p class="s-crd-title-info">Graphic Design</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content">
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                </div>
+            </div>
+            <div class="s-cards">
+                <div class="s-crd-title">
+                    <p class="s-crd-title-info">Motion Graphics</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content">
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                </div>
+            </div>
+            <div class="s-cards">
+                <div class="s-crd-title">
+                    <p class="s-crd-title-info">2D Animation</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content">
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                </div>
+            </div>
+            <div class="s-cards">
+                <div class="s-crd-title">
+                    <p class="s-crd-title-info">Promos</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content">
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                </div>
+            </div>
+            <div class="s-cards">
+                <div class="s-crd-title">
+                    <p class="s-crd-title-info">News Montage</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content">
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                </div>
+            </div>
+            <div class="s-cards">
+                <div class="s-crd-title">
+                    <p class="s-crd-title-info">Text Design</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content">
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                </div>
+            </div>
+            <div class="s-cards">
+                <div class="s-crd-title">
+                    <p class="s-crd-title-info">Social Media Posters</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content">
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                </div>
+            </div>
+            <div class="s-cards">
+                <div class="s-crd-title">
+                    <p class="s-crd-title-info">Youtube Thumbnail</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content">
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                </div>
+            </div>
+            <div class="s-cards">
+                <div class="s-crd-title">
+                    <p class="s-crd-title-info">Logo Animation</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content">
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                </div>
+            </div>
+            <div class="s-cards">
+                <div class="s-crd-title">
+                    <p class="s-crd-title-info">Company Promotion Vedio</p>
+                    <span class="arrows"></span>
+                </div>
+                <div class="s-crd-content" id="projectSection">
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                    <p class="s-crd-content-list"><!-- Any Skills Type Here --></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================== Portfolio Section ======================== -->
+    <section class="sections portfolio-section">
+        <div class="section-title">
+            <h3>My Portfolio</h3>
+            <p class="s-subtitle">100+ Projects</p>
+        </div>
+        <div class="portfolio-container">
+            <div class="p-title">Watch The Latest Tutorial <span></span></div>
+            <div class="p-yt-container">
+                <div class="p-yt-c-left yt-swapper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-yt-vedio"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ifcOBlIvae0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="swiper-slide p-yt-vedio"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/67YhSoSogPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="swiper-slide p-yt-vedio"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/AxSA4OUXgAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="swiper-slide p-yt-vedio"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/MHFuoUsHfNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="swiper-slide p-yt-vedio"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Dggjqkr05bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <div class="swiper-slide p-yt-vedio"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/7-Rhfasnv8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                </div>
+                <h6 class="p-yt-c-right">CHECKOUT OUR <span>YOUTUBE</span> CHANNEL</h6>
+            </div>
+            <div class="p-poster-container poster-swapper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide p-poster-img"><img src="./images/img-1.jpg" alt="Posters" loading="lazy"></div>
+                    <div class="swiper-slide p-poster-img"><img src="./images/img-2.jpg" alt="Posters" loading="lazy"></div>
+                    <div class="swiper-slide p-poster-img"><img src="./images/img-3.jpg" alt="Posters" loading="lazy"></div>
+                    <div class="swiper-slide p-poster-img"><img src="./images/img-4.jpg" alt="Posters" loading="lazy"></div>
+                    <div class="swiper-slide p-poster-img"><img src="./images/img-5.jpg" alt="Posters" loading="lazy"></div>
+                    <div class="swiper-slide p-poster-img"><img src="./images/img-6.jpg" alt="Posters" loading="lazy"></div>
+                    <div class="swiper-slide p-poster-img"><img src="./images/img-7.jpg" alt="Posters" loading="lazy"></div>
+                    <div class="swiper-slide p-poster-img"><img src="./images/img-8.jpg" alt="Posters" loading="lazy"></div>
+                    <div class="swiper-slide p-poster-img"><img src="./images/img-9.jpg" alt="Posters" loading="lazy"></div>
+                    <div class="swiper-slide p-poster-img"><img src="./images/img-10.jpg" alt="Posters" loading="lazy"></div>
+                    <div class="swiper-slide p-poster-img"><img src="./images/img-11.jpg" alt="Posters" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================== Contact Section ======================== -->
+    <section class="sections contact-section" id="contactSection">
+        <div class="section-title">
+            <h3>Contact Me</h3>
+            <p class="s-subtitle">On Your Favrorite Social Media Platforms</p>
+        </div>
+        <div class="contact-section-group">
+            <div class="contact-container">
+                <div class="left-contact-sec">
+                    <form action="https://formsubmit.co/md.saqibmca@gmail.com" method="POST" class='contact-form'>
+                        <div class="form-group">
+                            <p class="error" id='err-name'></p>
+                            <div class="form-group-input">
+                                <input type="text" class="focusAnim" name="name" id="name" required="required" autocomplete="off">
+                                <span>Full Name</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="error" id='err-email'></p>
+                            <div class="form-group-input">
+                                <input type="email" class="focusAnim" name="email" id="email" required="required" autocomplete="off">
+                                <span>Email</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="error" id='err-message'></p>
+                            <div class="form-group-input">
+                                <textarea class="focusAnim" name="message" id="message" required="required" autocomplete="off"></textarea>
+                                <span>Your Message</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class='submitBtn' id='submit' onClick="handleFormSubmit()">Send  Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="right-contact-sec">
+                    <div class="c-r-contact">
+                        <a href="tel:8908655121" class="c-r-title">
+                            <div class="c-r-icon"><i class="fas fa-phone-alt fa-2x socialIcon"></i></div>
+                            <p class="c-r-title-icon">Call Me</p>
+                            <p class="c-r-title-val">8908655121 / <wbr>7008166708</p>
+                        </a>
+                    </div>
+                    <div class="c-r-contact">
+                        <a href="mailto:c.8908655121@gmail.com" target="_blank" class="c-r-title">
+                            <div class="c-r-icon"><i class="fas fa-envelope fa-2x socialIcon"></i></div>
+                            <p class="c-r-title-icon">Email</p>
+                            <p class="c-r-title-val">c.8908655121@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lets-connect-sec">
+                <div class="c-l-title">
+                    <p class="c-l-title-val">Let's Connect</p>
+                    <span></span>
+                </div>
+                <div class="c-l-social-icons">
+                    <a href="#" target="_blank" class="c-l-icon">
+                        <i class="fab fa-facebook-f fa-3x let-c-icon"></i>
+                        <p class="let-c-icon-val">Facebook</p>
+                    </a>
+                    <a href="#" target="_blank" class="c-l-icon">
+                        <i class="fab fa-instagram fa-3x let-c-icon"></i>
+                        <p class="let-c-icon-val">Instagram</p>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCAVTzXMmBraBUUSkCI4AP7A" target="_blank" class="c-l-icon">
+                        <i class="fab fa-youtube fa-3x let-c-icon"></i>
+                        <p class="let-c-icon-val">Youtube</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================== Footer Section ======================== -->
+    <section class="footer-section">
+        <div class="footer-container">
+            <i class="far fa-copyright fa-2x fa-fade footerIcon"></i>
+            <p class="footer-text">All Rights Reserved To <wbr/>Chandra <wbr/>Pratap Samal</p>
+        </div>
+    </section>
+
+    <!-- ========================== Go Up Button ======================== -->
+    <!-- -------- CSS Coding In footer.css File ----------------------- -->
+    <div class="go-up-container" id="go-up">
+        <i class="fa-solid fa-arrow-up fa-2x arrowUpIcon"></i>
+        <i class="fa-solid fa-arrow-up fa-2x arrowUpIcon"></i>
+    </div>
+
+    <script src="./javascript/script.js" defer></script>
+    <!-- Font-Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+.hero-section{
+    margin: 9rem 0rem;
+    width: 80%;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hero-float-left{
+    font-size: 10vw;
+    left: -15%;
+    top: -15%;
+    position: absolute;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    font-weight: 900;
+    background-image: linear-gradient(90deg, transparent 0%, transparent 10%,transparent 20%,  var(--bgHover) 100%);
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    z-index: -1;
+}
+.h-left,
+.h-right{
+    width: calc(50% - .5rem);
+    padding: 6rem 0rem;
+    background: transparent;
+}
+.h-left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+}
+.h-left-intro{
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+}
+.h-left-name{
+    font-size: 12rem;
+    line-height: 12rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--textColor);
+}
+.h-left-title{
+    font-size: 2.6rem;
+    line-height: 3rem;
+    font-weight: 400;
+    word-spacing: .2rem;
+    text-transform: capitalize;
+    color: var(--primaryColor);
+    display: block;
+}
+.h-right{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.h-right-img{
+    outline: 1px solid #FFF;
+    width: 90%;
+    padding: 5rem;
+    height: auto;
+    border-radius: 36% 64% 66% 34% / 33% 29% 71% 67% ;
+    outline: 25rem solid rgba(255, 255, 255, .020);
+}
+.h-right-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    animation: upDown 4s infinite linear;
+    -webkit-animation: upDown 4s infinite linear;
+    -ms-animation: upDown 4s infinite linear;
+    -moz-animation: upDown 4s infinite linear;
+    -o-animation: upDown 4s infinite linear;
+}
+@media  screen  and (max-width:1400px) {
+    .h-left-intro{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .h-left-name{
+        font-size: 10rem;
+        line-height: 10rem;
+    }
+    .h-left-title{
+        font-size: 2.1rem;
+        line-height: 2.7rem;
+    }
+}
+@media  screen  and (max-width:1200px) {
+    .h-left-intro{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .h-left-name{
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+    .h-left-title{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+}
+@media  screen  and (max-width:992px) {
+    .hero-section{
+        flex-direction: column;
+    }
+    .h-left,
+    .h-right{
+    width: 70%;
+    padding: 6rem 0rem;
+    }
+    .h-right-img{
+        width: 100%;
+        padding: 5rem;
+        outline: 20rem solid rgba(255, 255, 255, .020);
+    }
+    .hero-float-left{
+        font-size: 12rem;
+        left: -16%;
+        top: -10%;
+        z-index: -1;
+    }
+    .h-left-title{
+        width: 80%;
+    }
+}
+@media  screen  and (max-width:768px) {
+    .hero-section{
+        width: 85%;
+    }
+    .h-left,
+    .h-right{
+    width: 80%;
+    }
+    .h-right-img{
+        width: 100%;
+        padding: 5rem;
+        height: auto;
+        border-radius: 36% 64% 66% 34% / 33% 29% 71% 67% ;
+        outline: 20rem solid rgba(255, 255, 255, .020);
+    }
+    .hero-float-left{
+        font-size: 10rem;
+        left: -13%;
+        top: -8%;
+    }
+    .h-left-title{
+        width: 80%;
+    }
+}
+  @media  screen  and (max-width:576px) {
+    .hero-section{
+        width: 90%;
+    }
+    .h-left,
+    .h-right{
+     width: 100%;
+    }
+    .h-right{
+        padding: 2rem 0rem;
+    }
+    .h-right-img{
+        padding: 0rem;
+        outline: 12rem solid rgba(255, 255, 255, .020);
+        padding: 3rem;
+        overflow: hidden;
+    }
+    .hero-float-left{
+        display: none;
+    }
+    .h-left-intro{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .h-left-name{
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    .h-left-title{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        width: 100%;
+    }
+}
