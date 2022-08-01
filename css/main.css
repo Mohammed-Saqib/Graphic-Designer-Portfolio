@@ -149,6 +149,20 @@ body{
       background-position: -150% 100%;
   }
 }
+@media  screen  and (min-width:1920px) {
+  body{
+    width: 100rem;
+    margin: 0rem auto;
+    position: relative;
+  }
+  .sections{
+    width: 100rem;
+  }
+  .header{
+    max-width: 100rem;
+    top: 0;
+  }
+}
 @media  screen  and (max-width:768px) {
   .sections{
       width: 85%;
