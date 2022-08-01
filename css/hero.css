@@ -68,7 +68,7 @@
     position: relative;
 }
 .h-right-img{
-    outline: 1px solid #FFF;
+    /* outline: 1px solid #FFF; */
     width: 90%;
     padding: 5rem;
     height: auto;
@@ -85,6 +85,11 @@
     -ms-animation: upDown 4s infinite linear;
     -moz-animation: upDown 4s infinite linear;
     -o-animation: upDown 4s infinite linear;
+}
+@media  screen  and (min-width:1920px) {
+    .hero-float-left{
+        font-size: 13rem;
+    }
 }
 @media  screen  and (max-width:1400px) {
     .h-left-intro{
